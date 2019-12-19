@@ -17,7 +17,7 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 public class App {
     public static void main(String[] args) throws JAXBException, MqttException {
 
-        IoTCoreMqttClient mqttClient = new IoTCoreMqttClient.Builder("chwa-test-proj")
+        IoTCoreMqttClient mqttClient = new IoTCoreMqttClient.Builder("[replace with project id]")
             .withHost("STD")
             .withPort("MQTT")
             .withRegistry("test_reg")
