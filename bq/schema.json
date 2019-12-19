@@ -1,0 +1,105 @@
+[
+    {
+        "name": "interval_start",
+        "type": "TIMESTAMP",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "interval_end",
+        "type": "TIMESTAMP",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "device",
+        "type": "STRING",
+        "mode": "REQUIRED"
+    },
+    {
+        "name": "temperature",
+        "type": "STRUCT",
+        "mode": "NULLABLE",
+	"fields": [
+	    {
+		"name": "max",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+	    },
+            {
+                "name": "min",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "avg",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+            }
+	]
+    },
+    {
+        "name": "pressure",
+        "type": "STRUCT",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "max",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "min",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "avg",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "light_level",
+        "type": "STRUCT",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "max",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "min",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "avg",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+            }
+        ]
+    },
+    {
+        "name": "humidity",
+        "type": "STRUCT",
+        "mode": "NULLABLE",
+        "fields": [
+            {
+                "name": "max",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "min",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+            },
+            {
+                "name": "avg",
+                "type": "FLOAT64",
+                "mode": "NULLABLE"
+            }
+        ]
+    }
+]
